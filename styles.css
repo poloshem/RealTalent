@@ -13,6 +13,64 @@
   --border-light: rgba(212,165,50,0.1);
 }
 
+[data-theme="light"] {
+  --dark: #F5F5F5;
+  --dark-2: #FFFFFF;
+  --dark-3: #FFFFFF;
+  --text: #1A1A1A;
+  --text-muted: rgba(26,26,26,0.7);
+  --text-dim: rgba(26,26,26,0.45);
+  --border: rgba(0,0,0,0.1);
+  --border-light: rgba(0,0,0,0.06);
+}
+
+[data-theme="light"] .gold {
+  color: #8B6914;
+}
+
+[data-theme="light"] .hero-pitch {
+  opacity: 0.03;
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group select,
+[data-theme="light"] .form-group textarea {
+  background: #FFFFFF;
+  border-color: rgba(0,0,0,0.15);
+}
+
+[data-theme="light"] .form-group input:focus,
+[data-theme="light"] .form-group select:focus,
+[data-theme="light"] .form-group textarea:focus {
+  border-color: #8B6914;
+}
+
+[data-theme="light"] .form-group select option {
+  background: #FFFFFF;
+}
+
+[data-theme="light"] .cta-banner {
+  color: #1A1A1A;
+}
+
+[data-theme="light"] .cta-banner p {
+  color: rgba(26,26,26,0.72);
+}
+
+[data-theme="light"] .tag-news {
+  background: rgba(0,0,0,0.06);
+  color: rgba(26,26,26,0.65);
+}
+
+[data-theme="light"] .btn-dark {
+  background: #1A1A1A;
+  color: #D4A532;
+}
+
+[data-theme="light"] .btn-dark:hover {
+  background: #2a2a2a;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -100,6 +158,13 @@ nav {
   list-style: none;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
@@ -164,6 +229,45 @@ nav {
   height: 2px;
   background: var(--gold);
   border-radius: 2px;
+}
+
+/* THEME TOGGLE */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s, border-color 0.2s;
+  margin-left: auto;
+}
+
+.theme-toggle:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.theme-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    display: none;
+  }
+}
+
+html[data-theme="light"] .hero-pitch {
+  opacity: 0.03;
 }
 
 .nav-cta { display: inline-block; }
