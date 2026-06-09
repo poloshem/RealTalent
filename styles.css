@@ -154,8 +154,9 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.75rem;
   list-style: none;
+  white-space: nowrap;
 }
 
 .nav-right {
@@ -173,6 +174,7 @@ nav {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover { color: var(--gold); }
@@ -192,6 +194,7 @@ nav {
   border-radius: 3px;
   text-decoration: none;
   transition: background 0.2s, transform 0.1s;
+  white-space: nowrap;
 }
 
 .btn:hover { background: var(--gold-light); }
