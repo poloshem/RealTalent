@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Talent Academy FC — Oyugis, Kenya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" role="dialog" aria-label="Navigation menu">
+  <button id="mobile-close" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="programs.html">Programs</a>
+  <a href="coaches.html">Coaches</a>
+  <a href="news.html">News &amp; Results</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="register.html" style="color:var(--gold)">Register</a>
+</div>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="Real Talent Academy home">
+      <div class="crest">
+        <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="23,2 42,13 42,33 23,44 4,33 4,13" fill="#1A1400" stroke="#D4A532" stroke-width="1.5"/>
+          <text x="23" y="20" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="9" fill="#D4A532" letter-spacing="1.5">RTA</text>
+          <circle cx="23" cy="29" r="6" fill="none" stroke="#D4A532" stroke-width="1.2"/>
+          <line x1="23" y1="23" x2="23" y2="35" stroke="#D4A532" stroke-width="0.9"/>
+          <line x1="17" y1="29" x2="29" y2="29" stroke="#D4A532" stroke-width="0.9"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        Real Talent Academy
+        <small>FC · Oyugis, Kenya</small>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="news.html">News &amp; Results</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="register.html" class="btn nav-cta">Register Now</a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-pitch" aria-hidden="true"></div>
+  <div class="hero-circle hero-circle-1" aria-hidden="true"></div>
+  <div class="hero-circle hero-circle-2" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Oyugis, Homabay County — Est. 2020</p>
+    <h1 class="display hero-title">
+      Where <span class="gold">Raw Talent</span><br>
+      Becomes<br>
+      <span class="gold">Real Greatness</span>
+    </h1>
+    <p class="hero-sub">
+      Real Talent Academy is Oyugis's home of youth football excellence — developing technically sharp, mentally tough, and character-driven players from the ground up.
+    </p>
+    <div class="hero-ctas">
+      <a href="register.html" class="btn">Register Your Player</a>
+      <a href="programs.html" class="btn btn-outline">Explore Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar" aria-label="Key club statistics">
+  <div class="stat">
+    <div class="stat-num">200+</div>
+    <div class="stat-label">Active Players</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">U8–U18</div>
+    <div class="stat-label">Age Groups</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">12</div>
+    <div class="stat-label">Licensed Coaches</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">5+</div>
+    <div class="stat-label">Years Developing Talent</div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Trials Are Open.<br>Come Show Us What You've Got.</h2>
+  <p>Every Saturday · 8:00am · Real Talent Academy Grounds, Oyugis</p>
+  <a href="register.html" class="btn btn-dark">Register Now</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Real Talent Academy FC · Oyugis, Homabay County, Kenya</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div id="toast" role="status" aria-live="polite">Registration submitted — we'll be in touch!</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a id="wa-btn"
+   href="https://wa.me/254700000000?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Real%20Talent%20Academy."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.668 4.785 1.832 6.773L2 30l7.418-1.797A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.57 11.57 0 0 1-5.898-1.614l-.422-.252-4.402 1.066 1.098-4.284-.276-.44A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.34-8.66c-.348-.174-2.06-1.016-2.38-1.132-.318-.116-.55-.174-.78.174-.232.348-.898 1.132-1.1 1.364-.202.232-.404.26-.752.086-.348-.174-1.47-.542-2.8-1.728-1.034-.924-1.732-2.064-1.936-2.412-.202-.348-.022-.536.152-.708.156-.156.348-.406.522-.608.174-.202.232-.348.348-.58.116-.232.058-.434-.028-.608-.086-.174-.78-1.88-1.07-2.574-.282-.676-.568-.584-.78-.594l-.664-.012c-.232 0-.608.086-.926.434-.318.348-1.214 1.186-1.214 2.892 0 1.706 1.242 3.354 1.416 3.586.174.232 2.444 3.732 5.922 5.234.828.358 1.474.572 1.978.732.832.264 1.588.226 2.186.138.666-.1 2.06-.842 2.35-1.656.29-.814.29-1.512.202-1.656-.086-.144-.318-.232-.666-.406z"/>
+  </svg>
+</a>
+<div id="wa-tooltip">Chat on WhatsApp</div>
+
+<script src="main.js"></script>
+</body>
+</html>

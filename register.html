@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — Real Talent Academy FC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" role="dialog" aria-label="Navigation menu">
+  <button id="mobile-close" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="programs.html">Programs</a>
+  <a href="coaches.html">Coaches</a>
+  <a href="news.html">News &amp; Results</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="register.html" style="color:var(--gold)">Register</a>
+</div>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="Real Talent Academy home">
+      <div class="crest">
+        <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="23,2 42,13 42,33 23,44 4,33 4,13" fill="#1A1400" stroke="#D4A532" stroke-width="1.5"/>
+          <text x="23" y="20" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="900" font-size="9" fill="#D4A532" letter-spacing="1.5">RTA</text>
+          <circle cx="23" cy="29" r="6" fill="none" stroke="#D4A532" stroke-width="1.2"/>
+          <line x1="23" y1="23" x2="23" y2="35" stroke="#D4A532" stroke-width="0.9"/>
+          <line x1="17" y1="29" x2="29" y2="29" stroke="#D4A532" stroke-width="0.9"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        Real Talent Academy
+        <small>FC · Oyugis, Kenya</small>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="news.html">News &amp; Results</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="register.html" class="btn nav-cta">Register Now</a>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- REGISTRATION -->
+<section id="register">
+  <div class="section-wrap">
+    <p class="eyebrow">Join the Academy</p>
+    <h2 class="display">Register Your<br>Player Today</h2>
+    <p>
+      Trials are open. Limited spots available for the 2025/26 season across all age groups.
+    </p>
+
+    <div class="register-layout">
+      <div class="register-info">
+        <p>
+          Registration is open to all players aged 8–18 residing in Oyugis, Homabay County, and surrounding areas. No prior club experience is required — all ability levels are welcome to trial.
+        </p>
+        <p>
+          All registered players receive structured coaching, access to competitive fixtures, a training kit, and player development reports at the end of each term.
+        </p>
+
+        <div class="register-steps">
+          <div class="reg-step">
+            <div class="reg-step-num">1</div>
+            <div class="reg-step-text">
+              <span class="reg-step-title">Fill in this form</span>
+              Submit your player's details below.
+            </div>
+          </div>
+          <div class="reg-step">
+            <div class="reg-step-num">2</div>
+            <div class="reg-step-text">
+              <span class="reg-step-title">Attend a trial session</span>
+              We'll confirm your trial date and time via phone or WhatsApp.
+            </div>
+          </div>
+          <div class="reg-step">
+            <div class="reg-step-num">3</div>
+            <div class="reg-step-text">
+              <span class="reg-step-title">Receive your placement</span>
+              Players are placed in the appropriate age group after the trial.
+            </div>
+          </div>
+          <div class="reg-step">
+            <div class="reg-step-num">4</div>
+            <div class="reg-step-text">
+              <span class="reg-step-title">Start training</span>
+              Sessions run Tuesday, Thursday, and Saturday at our Oyugis grounds.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form id="reg-form" novalidate>
+          <div class="form-section-title">Player Details</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="player-first">First Name *</label>
+              <input type="text" id="player-first" name="playerFirst" placeholder="e.g. Brian" required />
+            </div>
+            <div class="form-group">
+              <label for="player-last">Last Name *</label>
+              <input type="text" id="player-last" name="playerLast" placeholder="e.g. Omondi" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="player-dob">Date of Birth *</label>
+              <input type="date" id="player-dob" name="playerDob" required />
+            </div>
+            <div class="form-group">
+              <label for="player-position">Preferred Position</label>
+              <select id="player-position" name="playerPosition">
+                <option value="">Select position</option>
+                <option>Goalkeeper</option>
+                <option>Defender</option>
+                <option>Midfielder</option>
+                <option>Attacker</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="player-school">School / Previous Club</label>
+            <input type="text" id="player-school" name="playerSchool" placeholder="Name of school or previous club" />
+          </div>
+
+          <div class="form-section-title">Parent / Guardian Details</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parent-first">First Name *</label>
+              <input type="text" id="parent-first" name="parentFirst" placeholder="e.g. John" required />
+            </div>
+            <div class="form-group">
+              <label for="parent-last">Last Name *</label>
+              <input type="text" id="parent-last" name="parentLast" placeholder="e.g. Otieno" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="parent-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="parent-phone" name="parentPhone" placeholder="e.g. 0712 345 678" required />
+            </div>
+            <div class="form-group">
+              <label for="parent-location">Town / Village *</label>
+              <input type="text" id="parent-location" name="parentLocation" placeholder="e.g. Oyugis" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="parent-email">Email Address (optional)</label>
+            <input type="email" id="parent-email" name="parentEmail" placeholder="e.g. john@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" placeholder="Any injuries, medical conditions, or questions…"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn">Submit Registration</button>
+            <p class="form-note">We will contact you within 2 working days to confirm your trial date.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Trials Are Open.<br>Come Show Us What You've Got.</h2>
+  <p>Every Saturday · 8:00am · Real Talent Academy Grounds, Oyugis</p>
+  <a href="register.html" class="btn btn-dark">Register Now</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Real Talent Academy FC · Oyugis, Homabay County, Kenya</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="coaches.html">Coaches</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div id="toast" role="status" aria-live="polite">Registration submitted — we'll be in touch!</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a id="wa-btn"
+   href="https://wa.me/254700000000?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Real%20Talent%20Academy."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.668 4.785 1.832 6.773L2 30l7.418-1.797A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.57 11.57 0 0 1-5.898-1.614l-.422-.252-4.402 1.066 1.098-4.284-.276-.44A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.34-8.66c-.348-.174-2.06-1.016-2.38-1.132-.318-.116-.55-.174-.78.174-.232.348-.898 1.132-1.1 1.364-.202.232-.404.26-.752.086-.348-.174-1.47-.542-2.8-1.728-1.034-.924-1.732-2.064-1.936-2.412-.202-.348-.022-.536.152-.708.156-.156.348-.406.522-.608.174-.202.232-.348.348-.58.116-.232.058-.434-.028-.608-.086-.174-.78-1.88-1.07-2.574-.282-.676-.568-.584-.78-.594l-.664-.012c-.232 0-.608.086-.926.434-.318.348-1.214 1.186-1.214 2.892 0 1.706 1.242 3.354 1.416 3.586.174.232 2.444 3.732 5.922 5.234.828.358 1.474.572 1.978.732.832.264 1.588.226 2.186.138.666-.1 2.06-.842 2.35-1.656.29-.814.29-1.512.202-1.656-.086-.144-.318-.232-.666-.406z"/>
+  </svg>
+</a>
+<div id="wa-tooltip">Chat on WhatsApp</div>
+
+<script src="main.js"></script>
+</body>
+</html>
