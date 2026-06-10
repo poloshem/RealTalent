@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (themeToggle) {
     const stored = localStorage.getItem('theme');
+    console.log('[Theme] Toggle found. Stored theme:', stored);
     if (stored === 'light') {
       document.documentElement.setAttribute('data-theme', 'light');
       updateToggleUI(true);
@@ -123,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggle.addEventListener('click', () => {
       const current = document.documentElement.getAttribute('data-theme');
+      console.log('[Theme] Clicked. Current:', current);
       if (current === 'light') {
         document.documentElement.removeAttribute('data-theme');
         localStorage.setItem('theme', 'dark');
@@ -133,6 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateToggleUI(true);
       }
     });
+  } else {
+    console.warn('[Theme] Toggle button not found on this page');
   }
 
   function updateToggleUI(isLight) {
